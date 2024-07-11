@@ -1,7 +1,5 @@
-USE db_datalemur;
-
 -- Q1 -  App Click-through Rate (CTR) [Facebook SQL Interview Question]
--- Write a query to get the appís click-through rate (CTR %) in 2022. 
+-- Write a query to get the app‚Äôs click-through rate (CTR %) in 2022. 
 -- Output the results in percentages rounded to 2 decimal places.
 -- Percentage of click-through rate = 100.0 * Number of clicks / Number of impressions
 
@@ -28,7 +26,7 @@ GROUP BY app_id;
 -- Q2 -  Average Post Hiatus (Part 1) [Facebook SQL Interview Question]
 -- Given a table of Facebook posts, for each user who posted at 
 -- least twice in 2021, write a query to find the number of days 
--- between each userís first post of the year and last post of the year in the year 2021. 
+-- between each user‚Äôs first post of the year and last post of the year in the year 2021. 
 -- Output the user and number of the days between each user's first and last post.
 
 -- Tables: posts
@@ -178,7 +176,7 @@ ORDER BY completed_trades DESC;
 
 
 
--- Q6 ñ   Compressed Mean [Alibaba SQL Interview Question]
+-- Q6 ‚Äì   Compressed Mean [Alibaba SQL Interview Question]
 
 --You are trying to find the mean number of items bought per order on Alibaba, 
 --rounded to 1 decimal place.
@@ -209,7 +207,7 @@ FROM
 
 
 
--- Q7 ñ   Given a table of candidates and their skills, you want to 
+-- Q7 ‚Äì   Given a table of candidates and their skills, you want to 
 -- find candidates who are proficient in Python, Tableau, and PostgreSQL.
 
 --Write a query to list the candidates who possess all of the required skills for the job. 
@@ -244,7 +242,7 @@ ORDER BY candidate_id;
 
 
 
--- Q8 ñ Duplicate Job Listings [Linkedin SQL Interview Question]
+-- Q8 ‚Äì Duplicate Job Listings [Linkedin SQL Interview Question]
 --Assume you are given the table below that shows job postings for all companies on the LinkedIn platform. 
 --Write a query to get the number of companies that have posted duplicate job listings.
 --Duplicate job listings refer to two jobs at the same company with the same title and description.
@@ -265,7 +263,6 @@ FROM (
 
 --duplicate_companies
 --1
-
 
 
 
@@ -295,7 +292,7 @@ GROUP BY account_id;
 
 --Assume that you are given the table below containing information 
 --on viewership by device type (where the three types are laptop,
---tablet, and phone). Define ìmobileî as the sum of tablet and phone viewership numbers. 
+--tablet, and phone). Define ‚Äúmobile‚Äù as the sum of tablet and phone viewership numbers. 
 
 --Write a query to compare the viewership on laptops versus mobile devices.
 --Output the total viewership for laptop and mobile devices in the format 
@@ -316,7 +313,7 @@ FROM viewership;
 
 
 
---Q11 ñ Page With No Likes [Facebook SQL Interview Question]
+--Q11 ‚Äì Page With No Likes [Facebook SQL Interview Question]
 --Write a query to return the page IDs of all the Facebook pages 
 --that don't have any likes. The output should be in ascending order.
 
@@ -341,7 +338,7 @@ ORDER BY p.page_id;
 
 
 
---Q12 ñ Patient Support Analysis (Part 1) [UnitedHealth SQL Interview Question]
+--Q12 ‚Äì Patient Support Analysis (Part 1) [UnitedHealth SQL Interview Question]
 --UnitedHealth has a program called Advocate4Me, which allows members to call 
 --an advocate and receive support for their health care needs
 -- whether that's behavioural, clinical, well-being, health care financing, 
@@ -368,14 +365,14 @@ HAVING COUNT(case_id) >= 3;
 
 
 
---Q13 ñ  Patient Support Analysis (Part 2) [UnitedHealth SQL Interview Question]
+--Q13 ‚Äì  Patient Support Analysis (Part 2) [UnitedHealth SQL Interview Question]
 --UnitedHealth Group has a program called Advocate4Me, which allows members to 
 -- call an advocate and receive support for their health
---care needs ñ whether that's behavioural, clinical, well-being, health care 
+--care needs ‚Äì whether that's behavioural, clinical, well-being, health care 
 -- financing, benefits, claims or pharmacy help.
 
 --Calls to the Advocate4Me call centre are categorised, but sometimes they can't fit neatly into a category. 
---These uncategorised calls are labelled ìn/aî, or are just empty (when 
+--These uncategorised calls are labelled ‚Äún/a‚Äù, or are just empty (when 
 --a support agent enters nothing into the category field).
 
 --Write a query to find the percentage of calls that cannot be categorised. 
@@ -394,7 +391,7 @@ FROM callers2;
 
 
 
---Q14 ñ Second Day Confirmation [TikTok SQL Interview Question]
+--Q14 ‚Äì Second Day Confirmation [TikTok SQL Interview Question]
 --Write a query to display the ids of the users who did not confirm on the first day 
 --of sign-up, but confirmed on the second day.
 
@@ -416,7 +413,7 @@ AND t.signup_action = 'Confirmed';
 
 
 
--- Q15 ñ Teams Power Users [Microsoft SQL Interview Question]
+-- Q15 ‚Äì Teams Power Users [Microsoft SQL Interview Question]
 --Write a query to find the top 2 power users who sent the 
 --most messages on Microsoft Teams in August 2022. 
 --Display the IDs of these 2 users along with the total number of messages they sent.
